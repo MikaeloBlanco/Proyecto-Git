@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.adolfo.miguel</groupId>
 	<artifactId>Proyectoparking</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>Proyectoparking</name>
 	<description>Diseño de programa para selección mensual de parking</description>
 	<properties>
