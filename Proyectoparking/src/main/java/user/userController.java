@@ -16,12 +16,12 @@ public class userController {
 
     @GetMapping("/usuarios")
     public String displayUsers(Model model){
-        model.addAttribute("usuarios", repository.getAll());
+        model.addAttribute(AttributeName:"usuarios", repository.getAll());
         return "listausuarios";
     }
 
     @GetMapping("/sorteos")
     public String displayPools(Model model){
-        model.addAttribute("usuarios", repository.getAll())
+        model.addAttribute(AttributeName:"sorteos", repository.getAll());
     }
 }
