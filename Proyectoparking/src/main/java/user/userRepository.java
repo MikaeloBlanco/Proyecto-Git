@@ -1,16 +1,25 @@
 package user;
 
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+@Repository
+
 public class userRepository {
     
+    private ArrayList<User> usuarios;
+
+    public UserRepository(){
+        usuarios = new ArrayList<>();
+    }
 
     public List<user> getAll(){
-
-        //TODO : Eliminar este codigo a continuación:
-        ArrayList<user> users = new ArrayList<>();
-        users.add(new User(email: "miguel", nombre: "mblafer963@g.educaand.es"));
-        return users;
-
-
+        this.usuarios.clear();
+        this.usuarios.add(new User(email: "mblafer963@g.educaand.es", name: "miguel"));
+        this.usuarios.add(new User(email: "mblafer963@g.educaand.es", name: "adolfo"));
+        return this.usuarios;
 
     }
 
