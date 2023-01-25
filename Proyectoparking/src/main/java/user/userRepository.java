@@ -9,16 +9,16 @@ import org.springframework.stereotype.Repository;
 
 public class userRepository {
     
-    private ArrayList<User> usuarios;
+    private ArrayList<user> usuarios;
 
-    public UserRepository(){
+    public userRepository(){
         usuarios = new ArrayList<>();
     }
 
     public List<user> getAll(){
         this.usuarios.clear();
-        this.usuarios.add(new User(email: "mblafer963@g.educaand.es", name: "miguel"));
-        this.usuarios.add(new User(email: "mblafer963@g.educaand.es", name: "adolfo"));
+        this.usuarios.add(new user( "mblafer963@g.educaand.es",  "miguel"));
+        this.usuarios.add(new user( "mblafer963@g.educaand.es",  "adolfo"));
         return this.usuarios;
 
     }

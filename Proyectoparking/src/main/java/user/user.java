@@ -1,11 +1,13 @@
+package user;
+
 public class user {
 
 
-    private long id;
+    //private long id;
     private String email;
     private String nombre;
     
-    public User(String email, String nombre){
+    public user(String email, String nombre){
         this.email = email;
         this.nombre = nombre;
     }
@@ -14,7 +16,7 @@ public class user {
         return this.email;
     }
 
-    public String getNombre{
+    public String getNombre(){
         return this.nombre;
     }
 
