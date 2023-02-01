@@ -3,12 +3,12 @@ package com.adolfo.miguel.Proyectoparking.pool;
 public class pool {
     
 
-        private int[] sorteo = new int[10];
+        private int[] sorteo;
         public int pool;
 
         public pool(int sorteo){
 
-            this.sorteo = sorteo(null); 
+            this.sorteo = getSorteo(10); 
 
         }
 
@@ -22,7 +22,7 @@ public class pool {
             return this.sorteo;
         }
 
-        public int[] getSorteo(){
+        public int[] getSorteo(int i){
             return this.sorteo;
         }
 
@@ -30,8 +30,12 @@ public class pool {
             this.sorteo = sorteo;
         }
 
-        public int setSorteo(int i) {
-            return 0;
+        public int[] getSorteo(int[] sorteo) {
+            return this.sorteo = sorteo;
+        }
+
+        public int[] setSorteo(int i) {
+            return null;
         }
     
 

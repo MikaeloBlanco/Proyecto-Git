@@ -12,9 +12,9 @@ public class userController {
     @Autowired
     private userRepository repository;
 
-    @GetMapping("/users")
+    @GetMapping("/user")
     public String displayUser(Model model){
-        model.addAttribute("users", repository.getAll());
+        model.addAttribute("usuarios", repository.getAll());
         return "listausuarios";
     }
 }
