@@ -21,7 +21,6 @@ public class poolRepository {
     public List<pool> getAll(){
         this.sorteos.clear();
         this.sorteos.add(new pool(1));
-        this.sorteos.add(new pool(2));
         return this.sorteos;
 
     }

@@ -2,40 +2,33 @@ package com.adolfo.miguel.Proyectoparking.pool;
 
 public class pool {
     
+    public pool(){
 
-        private int[] sorteo;
+        this((int)(Math.random() * 11));
+
+    }
+        private int sorteo;
         public int pool;
 
         public pool(int sorteo){
 
-            this.sorteo = getSorteo(10); 
+            this.sorteo = sorteo; 
 
         }
 
-        public int[] sorteo(int[] sorteo){
-
-            for(int i = 0; i < 10; i++){
-
-                sorteo[i] = (int)(Math.random() * 11);
-
-            }
+        public int sorteo(int sorteo){
+            
             return this.sorteo;
         }
 
-        public int[] getSorteo(int i){
-            return this.sorteo;
-        }
-
-        public void setSorteo(int[] sorteo){
+        public void getSorteo(int sorteo){
             this.sorteo = sorteo;
         }
 
-        public int[] getSorteo(int[] sorteo) {
+        public int setSorteo(int sorteo) {
+            
             return this.sorteo = sorteo;
-        }
 
-        public int[] setSorteo(int i) {
-            return null;
         }
     
 

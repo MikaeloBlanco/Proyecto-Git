@@ -18,7 +18,7 @@ class ProyectoparkingApplicationTests {
 
 		int expected = sorteo.pool;
 
-		int[] actual = sorteo.setSorteo(10);
+		int actual = sorteo.setSorteo(10);
 
 
 		assertEquals(expected,actual);
