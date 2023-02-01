@@ -1,4 +1,4 @@
-package user;
+package com.adolfo.miguel.Proyectoparking.user;
 
 
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class userRepository {
     public List<user> getAll(){
         this.usuarios.clear();
         this.usuarios.add(new user( "mblafer963@g.educaand.es",  "miguel"));
-        this.usuarios.add(new user( "mblafer963@g.educaand.es",  "adolfo"));
+        this.usuarios.add(new user( "aburbel032@g.educaand.es",  "adolfo"));
         return this.usuarios;
 
     }

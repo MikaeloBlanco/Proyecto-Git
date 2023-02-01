@@ -1,5 +1,4 @@
-package user;
-
+package com.adolfo.miguel.Proyectoparking.user;
 public class user {
 
 
