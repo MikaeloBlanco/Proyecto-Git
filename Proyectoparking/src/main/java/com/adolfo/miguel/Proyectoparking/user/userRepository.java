@@ -17,8 +17,8 @@ public class userRepository {
 
     public List<user> getAll(){
         this.usuarios.clear();
-        this.usuarios.add(new user( "mblafer963@g.educaand.es",  "miguel"));
-        this.usuarios.add(new user( "aburbel032@g.educaand.es",  "adolfo"));
+        this.usuarios.add(new user( "Blanco","Fernandez","miguel","Administrador"));
+        this.usuarios.add(new user( "Burgos","Belgrano", "adolfo","Usuario"));
         return this.usuarios;
 
     }

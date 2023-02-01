@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmls:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<title>Bienvenidos al Parking del CPIFP</title>
 <body>
-    <h1>Parking Málaga TechPark</h1>
-    <ul>
-        <li><a href="listausuarios">Gestion de usuarios</a></li>
-        <li><a href="lsitasorteos">Gestion de sorteos</a></li>
+    
+    <h1>Lista de sorteos</h1>
+
+    <ul th:each = "pool:${sorteos}" >
+        <li>
+            <p th:text = "${sorteos}"></p>
+        </li>
     </ul>
+
+
 </body>
 </html>

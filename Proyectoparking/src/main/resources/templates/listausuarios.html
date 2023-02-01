@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmls:th="http://www.thymeleaf.org"></html>
+<html xmls:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>Lista de usuarios</h1>
-    <ul th:each="usuario: ${usuarios}"></ul>
+    <ul th:each="user:${usuarios}"></ul>
     <li>
-        <p th:text="${usuario.nombre}"></p>
+        <p th:text="${user.nombre}"></p>
     </li>
 </body>
 </html>
